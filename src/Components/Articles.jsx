@@ -138,7 +138,7 @@ const Articles = () => {
           </div>
         </div>
       </div>
-      <div class="pr-40">
+      <div class="sm:pr-40">
         <div class="flex justify-center gap-6 my-8">
           <img src={breakfast} alt="breakfast" />
           <div>

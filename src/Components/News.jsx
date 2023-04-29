@@ -5,7 +5,7 @@ import img3 from "../assets/Images/IMG3.jpg.png";
 
 const News = () => {
   return (
-    <div class="w-screen h-[145px] grid grid-cols-3 gap-10 md:px-[150px] py-9">
+    <div class="w-screen h-[145px] grid sm:grid-cols-3 gap-10 md:px-[150px] py-9">
       <div class="flex justify-center items-center gap-4">
         <img src={img1} alt="img1" />
         <div>
@@ -15,7 +15,7 @@ const News = () => {
           <p class="text-[#808080] font-normal text-xs">SEPTEMBER 22, 2017</p>
         </div>
       </div>
-      <div class="flex justify-center items-center gap-4">
+      <div class="hidden sm:flex justify-center items-center gap-4">
         <img src={img2} alt="img2" />
         <div>
           <h4 class="text-[#111111] font-normal text-base font-['Libre_Baskerville'] mb-2">
@@ -24,7 +24,7 @@ const News = () => {
           <p class="text-[#808080] font-normal text-xs">MAY 6, 2020</p>
         </div>
       </div>
-      <div class="flex justify-center items-center gap-4">
+      <div class="hidden sm:flex justify-center items-center gap-4">
         <img src={img3} alt="img3" />
         <div>
           <h4 class="text-[#111111] font-normal text-base font-['Libre_Baskerville'] mb-2">

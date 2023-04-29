@@ -39,7 +39,7 @@ const News = () => {
           </div>
         </div>
       </div>
-      <div class="sm:hidden">
+      <div class="sm:hidden mt-4">
         <Carousel dynamicHeight={false}>
           <div>
             <div>

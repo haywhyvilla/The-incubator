@@ -25,7 +25,7 @@ const Home = () => {
         />
       </div>
 
-      <div class="w-[500px] sm:ml-8 px-12 sm:px-0">
+      <div class="w-[500px] sm:ml-8 pl-6 pr-14 sm:px-0">
         <div class="flex items-center gap-1">
           <div class="w-[9px] h-[9px] bg-[#FFFFFF] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
           <div class="w-[9px] h-[9px] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>

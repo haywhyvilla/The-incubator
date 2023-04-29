@@ -11,7 +11,7 @@ const Articles = () => {
       </h1>
       <div>
         <div class="my-9  grid grid-cols-3">
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Djtunez.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -24,7 +24,7 @@ const Articles = () => {
               January 11, 2023
             </p>
           </div>
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Tiblaze.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -37,7 +37,7 @@ const Articles = () => {
               January 11, 2023
             </p>
           </div>
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Afrobeat.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -53,7 +53,7 @@ const Articles = () => {
           </div>
         </div>
         <div class="my-9  grid grid-cols-3">
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Afrobeat.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -68,7 +68,7 @@ const Articles = () => {
             </p>
           </div>
 
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Djtunez.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -81,7 +81,7 @@ const Articles = () => {
               January 11, 2023
             </p>
           </div>
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Tiblaze.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -96,7 +96,7 @@ const Articles = () => {
           </div>
         </div>
         <div class="my-9  grid grid-cols-3">
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Tiblaze.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -109,7 +109,7 @@ const Articles = () => {
               January 11, 2023
             </p>
           </div>
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Afrobeat.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS
@@ -123,7 +123,7 @@ const Articles = () => {
               January 11, 2023
             </p>
           </div>
-          <div>
+          <div class="px-2 sm:px-0">
             <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Djtunez.png')] bg-cover relative">
               <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                 MUSIC & PLAYLISTS

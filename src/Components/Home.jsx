@@ -1,9 +1,13 @@
 import React from "react";
+import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <div class="h-screen w-screen bg-[url('././assets/Images/Hero-img.png')] bg-cover md:px-[140px] py-[35px]">
-      <div class="flex justify-between items-center mb-[250px]">
+    <div class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] sm:bg-[url('././assets/Images/Hero-img.png')] bg-cover md:px-[140px] py-[35px]">
+      <div class="flex justify-between items-center mb-[450px] sm:mb-[250px] px-8">
+        <div class="sm:hidden">
+          <AiOutlineMenu color="#ffffff" size={30} />
+        </div>
         <div class="flex justify-center items-center">
           <h4 class="font-['Courier_Prime'] text-white mr-4 font-bold text-2xl">
             the
@@ -12,9 +16,12 @@ const Home = () => {
             incubator
           </h4>
         </div>
+        <div class="sm:hidden">
+          <AiOutlineSearch color="#ffffff" size={30} />
+        </div>
         <input
           placeholder="Search..."
-          class="h-[40px] w-[280px] font-['Work_Sans'] bg-inherit border-solid border-[1px] border-[#E0E0E0] px-3 placeholder-[#F5F5F5] outline-none text-[#F5F5F5] shadow-[0px_2px_2px_rgba(0,0,0,0.05)]"
+          class="hidden sm:block h-[40px] w-[280px] font-['Work_Sans'] bg-inherit border-solid border-[1px] border-[#E0E0E0] px-3 placeholder-[#F5F5F5] outline-none text-[#F5F5F5] shadow-[0px_2px_2px_rgba(0,0,0,0.05)]"
         />
       </div>
 
@@ -51,7 +58,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div class="h-[50px] w-[100%] bg-[rgba(32,33,36,0.5)] mt-[100px] flex justify-between items-center px-[104px]">
+      <div class="h-[50px] w-[100%] bg-[rgba(32,33,36,0.5)] mt-[100px] justify-between items-center px-[104px] hidden sm:flex">
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
           News & Developments
         </a>

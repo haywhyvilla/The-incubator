@@ -13,7 +13,7 @@ const Details = () => {
               Music & Playlists
             </h1>
           </div>
-          <div class="flex justify-center items-center gap-6 my-8 border-[#EEEEEE] border-b-[1px] py-2 mb-2">
+          <div class="sm:flex justify-center items-center gap-6 my-8 border-[#EEEEEE] border-b-[1px] py-2 mb-2">
             <img src={Detail1} alt="Detail1" />
             <div>
               <h3 className="text-[#111111] font-['Jost'] font-medium text-sm mb-3">
@@ -55,7 +55,7 @@ const Details = () => {
               Technology & Science
             </h1>
           </div>
-          <div class="flex justify-center items-center gap-6 my-8 border-[#EEEEEE] border-b-[1px] py-2 mb-2">
+          <div class="sm:flex justify-center items-center gap-6 my-8 border-[#EEEEEE] border-b-[1px] py-2 mb-2">
             <img src={Detail2} alt="Detail2" />
             <div>
               <h3 className="text-[#111111] font-['Jost'] font-medium text-sm mb-3">
@@ -97,7 +97,7 @@ const Details = () => {
               Business & Entrepreneurship
             </h1>
           </div>
-          <div class="flex justify-center items-center gap-6 my-8 border-[#EEEEEE] border-b-[1px] py-2 mb-2">
+          <div class="sm:flex justify-center items-center gap-6 my-8 border-[#EEEEEE] border-b-[1px] py-2 mb-2">
             <img src={Detail3} alt="Detail3" />
             <div>
               <h3 className="text-[#111111] font-['Jost'] font-medium text-sm mb-3">

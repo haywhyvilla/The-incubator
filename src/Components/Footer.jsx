@@ -49,7 +49,7 @@ const Footer = () => {
           <p class="font-['Work_Sans'] font-light text-base">
             Weekly updates on music, style, culture and much more.
           </p>
-          <div class="flex justify-start items-center">
+          <div class="hidden sm:flex justify-start items-center">
             <input class="h-[58.95px] bg-[#1E1E1E]" />
             <button class="flex justify-center items-center h-[58.95px] bg-[#1E1E1E] px-3 outline-0">
               Submit

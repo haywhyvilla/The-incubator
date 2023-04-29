@@ -5,7 +5,7 @@ import img3 from "../assets/Images/IMG3.jpg.png";
 
 const News = () => {
   return (
-    <div class="w-screen h-[145px] grid grid-cols-3 gap-10 px-[150px] py-9">
+    <div class="w-screen h-[145px] grid grid-cols-3 gap-10 md:px-[150px] py-9">
       <div class="flex justify-center items-center gap-4">
         <img src={img1} alt="img1" />
         <div>

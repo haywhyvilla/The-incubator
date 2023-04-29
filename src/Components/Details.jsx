@@ -6,7 +6,7 @@ import Detail3 from "../assets/Images/Detail3.png";
 const Details = () => {
   return (
     <section>
-      <div class="px-[140px] grid grid-cols-3 gap-14">
+      <div class="md:px-[140px] grid grid-cols-3 gap-14">
         <div>
           <div class="w-full border-b-2 border-[#333333] py-2 mb-2">
             <h1 class="text-[#111111] text-lg font-bold font-['Work_Sans']">

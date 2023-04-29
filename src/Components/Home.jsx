@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div class="h-screen w-screen bg-[url('././assets/Images/Hero-img.png')] bg-cover px-[140px] py-[35px]">
+    <div class="h-screen w-screen bg-[url('././assets/Images/Hero-img.png')] bg-cover md:px-[140px] py-[35px]">
       <div class="flex justify-between items-center mb-[250px]">
         <div class="flex justify-center items-center">
           <h4 class="font-['Courier_Prime'] text-white mr-4 font-bold text-2xl">

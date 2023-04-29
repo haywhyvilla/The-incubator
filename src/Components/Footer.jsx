@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div class="bg-[#0B0B0B] text-white w-full mx-auto px-16">
+    <div class="bg-[#0B0B0B] text-white w-full mx-auto md:px-16">
       <div class="container mx-auto md:px-[150px] px-5 py-24 flex md:justify-between items-start flex-wrap gap-5">
         <div class="flex justify-center items-center">
           <h4 class="font-['Courier_Prime'] text-white mr-4 font-bold text-2xl">

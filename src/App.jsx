@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Home />
       <News />
-      <div class="px-[140px] py-[60px] grid grid-cols-[2fr_1fr]">
+      <div class="md:px-[140px] py-[60px] grid grid-cols-[2fr_1fr]">
         <Articles />
         <Aside />
       </div>

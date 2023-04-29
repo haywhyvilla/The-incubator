@@ -32,7 +32,7 @@ const Home = () => {
           <div class="w-[9px] h-[9px] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
           <div class="w-[9px] h-[9px] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
         </div>
-        <h1 class="font-['Jost'] text-[#F5F5F5] font-bold text-5xl my-4">
+        <h1 class="font-['Jost'] text-[#F5F5F5] font-medium sm:font-bold text-3xl sm:text-5xl my-4">
           REMA: STILL DIVINE
         </h1>
         <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3">

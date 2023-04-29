@@ -3,8 +3,8 @@ import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <div class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] sm:bg-[url('././assets/Images/Hero-img.png')] bg-cover md:px-[140px] py-[35px]">
-      <div class="flex justify-between items-center mb-[450px] sm:mb-[250px] px-8">
+    <div class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] sm:bg-[url('././assets/Images/Hero-img.png')] bg-cover sm:px-[140px] py-[35px]">
+      <div class="flex justify-between items-center mb-[350px] sm:mb-[250px] px-4">
         <div class="sm:hidden">
           <AiOutlineMenu color="#ffffff" size={30} />
         </div>
@@ -25,7 +25,7 @@ const Home = () => {
         />
       </div>
 
-      <div class="w-[500px] ml-8">
+      <div class="w-[500px] sm:ml-8 px-8 sm:px-0">
         <div class="flex items-center gap-1">
           <div class="w-[9px] h-[9px] bg-[#FFFFFF] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
           <div class="w-[9px] h-[9px] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>

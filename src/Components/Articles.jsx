@@ -139,7 +139,7 @@ const Articles = () => {
         </div>
       </div>
       <div class="sm:pr-40">
-        <div class="flex justify-center gap-6 my-8">
+        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
           <img src={breakfast} alt="breakfast" />
           <div>
             <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
@@ -161,7 +161,7 @@ const Articles = () => {
             </p>
           </div>
         </div>
-        <div class="flex justify-center gap-6 my-8">
+        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
           <img src={farfromhome} alt="farfromhome" />
           <div>
             <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl">
@@ -183,7 +183,7 @@ const Articles = () => {
             </p>
           </div>
         </div>
-        <div class="flex justify-center gap-6 my-8">
+        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
           <img src={farfromhome} alt="farfromhome" />
           <div>
             <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
@@ -205,7 +205,7 @@ const Articles = () => {
             </p>
           </div>
         </div>
-        <div class="flex justify-center gap-6 my-8">
+        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
           <img src={farfromhome} alt="farfromhome" />
           <div>
             <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
@@ -227,7 +227,7 @@ const Articles = () => {
             </p>
           </div>
         </div>
-        <div class="flex justify-center gap-6 my-8">
+        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
           <img src={farfromhome} alt="farfromhome" />
           <div>
             <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">

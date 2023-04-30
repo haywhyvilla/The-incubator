@@ -10,7 +10,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 const Aside = () => {
   return (
-    <div>
+    <div class="ml-6 sm:ml-0">
       <h1 class="text-[#111111] font-['Work_Sans'] font-bold text-xl my-6">
         Our Picks
       </h1>

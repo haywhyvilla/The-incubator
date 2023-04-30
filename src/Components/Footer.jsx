@@ -13,7 +13,7 @@ const Footer = () => {
             incubator
           </h4>
         </div>
-        <div class="flex flex-col gap-[30px] w-[15%] mt-6 md:mt-0">
+        <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
           <a class="uppercase text-white font-light text-base font-['Work_Sans']">
             About
           </a>
@@ -24,7 +24,7 @@ const Footer = () => {
             Stockists
           </a>
         </div>
-        <div class="flex flex-col gap-[30px] w-[15%] mt-6 md:mt-0">
+        <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
           <a class="uppercase text-white font-light text-base font-['Work_Sans']">
             Music
           </a>
@@ -41,7 +41,7 @@ const Footer = () => {
             The Shuffle
           </a>
         </div>
-        <div class="flex flex-col gap-[30px] w-[15%] mt-6 md:mt-0">
+        <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
           <a class="text-white font-light text-base font-['Work_Sans']">
             contact@theincubator.com
           </a>

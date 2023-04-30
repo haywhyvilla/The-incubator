@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div class="overflow-hidden">
       <Home />
       <News />
       <div class="md:px-[140px] sm:py-[60px] sm:grid grid-cols-[2fr_1fr]">

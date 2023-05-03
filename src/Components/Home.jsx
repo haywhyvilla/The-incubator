@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div
-      class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] sm:bg-[url('././assets/Images/Hero-img.png')] bg-cover px-4 md:px-[140px] py-[35px] relative"
+      class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] lg:bg-[url('././assets/Images/Hero-img.png')] bg-cover px-4 md:px-[140px] py-[35px] relative"
       onClick={heroClick}
     >
       <div class="flex justify-between items-center mb-0 sm:mb-[250px] px-4">
@@ -91,7 +91,7 @@ const Home = () => {
         </div>
       ) : (
         <div>
-          <div class="w-[500px] mt-[350px] sm:ml-8 pl-6 pr-20 sm:px-0">
+          <div class="w-[500px] mt-[300px] sm:ml-8 pl-6 pr-20 sm:px-0">
             <div class="flex items-center gap-1">
               <div class="w-[9px] h-[9px] bg-[#FFFFFF] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
               <div class="w-[9px] h-[9px] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
@@ -127,7 +127,7 @@ const Home = () => {
         </div>
       )}
 
-      <div class="h-[50px] w-[100%] bg-[rgba(32,33,36,0.5)] mt-[100px] justify-between items-center px-[104px] hidden md:flex">
+      <div class="h-[50px] w-[100%] bg-[rgba(32,33,36,0.5)] mt-[20px] justify-between items-center px-[104px] hidden md:flex">
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
           News & Developments
         </a>

@@ -50,7 +50,7 @@ const Footer = () => {
             Weekly updates on music, style, culture and much more.
           </p>
           <div class="hidden sm:flex justify-start items-center">
-            <input class="h-[58.95px] bg-[#1E1E1E]" />
+            <input class="h-[58.95px] bg-[#1E1E1E] outline-none" />
             <button class="flex justify-center items-center h-[58.95px] bg-[#1E1E1E] px-3 outline-0">
               Submit
               <BsArrowRight />

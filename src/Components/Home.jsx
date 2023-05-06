@@ -19,11 +19,11 @@ const Home = () => {
   };
 
   return (
-    <div
-      class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] lg:bg-[url('././assets/Images/Hero-img.png')] bg-cover px-4 md:px-[140px] py-[35px] relative"
-      onClick={heroClick}
-    >
-      <div class="flex justify-between items-center mb-0 sm:mb-[250px] px-4">
+    <div class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] lg:bg-[url('././assets/Images/Hero-img.png')] bg-cover px-4 md:px-[140px] py-[35px] relative">
+      <div
+        class="flex justify-between items-center mb-0 sm:mb-[250px] px-4"
+        onClick={heroClick}
+      >
         {open ? (
           <div class="sm:hidden">
             <ImCancelCircle color="#ffffff" size={30} onClick={handleClick} />
@@ -55,7 +55,10 @@ const Home = () => {
         <div>
           <SideNavMobileVeiw class="absolute" />
 
-          <div class="w-[500px] mt-[350px] sm:mt-0 sm:ml-8 pl-6 pr-20 sm:px-0 absolute md:relative bottom-2">
+          <div
+            class="w-[500px] mt-[350px] sm:mt-0 sm:ml-8 pl-6 pr-20 sm:px-0 absolute md:relative bottom-2"
+            onClick={heroClick}
+          >
             <div class="flex items-center gap-1">
               <div class="w-[9px] h-[9px] bg-[#FFFFFF] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>
               <div class="w-[9px] h-[9px] border-solid border-[1px] border-[#FFFFFF] transform skew-y-12"></div>

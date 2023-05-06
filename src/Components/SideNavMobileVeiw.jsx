@@ -12,7 +12,7 @@ const SideNavMobileVeiw = () => {
   return (
     <div class="md:hidden absolute h-screen top-20 z-10">
       <div
-        class="mt-8 w-[275px] h-[65%] py-9 px-9 absolute bg-[rgba(32,33,36,0.5)]"
+        class="mt-8 w-[275px] h-[65%] py-2 px-9 absolute bg-[rgba(32,33,36,0.5)]"
         id="bg"
       >
         <div>

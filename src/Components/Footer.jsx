@@ -15,13 +15,25 @@ const Footer = () => {
         </div>
         <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
           <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            About
+            Homepage
           </a>
           <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Magazine
+            Stories
           </a>
           <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Stockists
+            Special Projects
+          </a>
+          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+            Gatherings
+          </a>
+          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+            Trips
+          </a>
+          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+            Shop
+          </a>
+          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+            Playlists
           </a>
         </div>
         <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">

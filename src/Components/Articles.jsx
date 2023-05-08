@@ -1,254 +1,101 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import breakfast from "../assets/Images/breakfast.png";
 import farfromhome from "../assets/Images/farfromhome.png";
 
 const Articles = () => {
+  const [articleData, setArticleData] = useState([]);
+  const [postData, setPostData] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchArticleData = async () => {
+      try {
+        const result = await axios.get(
+          "https://app.theincuba8or.com/api/recent-articles"
+        );
+        setArticleData(result.data.data);
+      } catch (error) {
+        setError(error);
+      }
+    };
+    fetchArticleData();
+  }, []);
+
+  useEffect(() => {
+    const fetchPostData = async () => {
+      try {
+        const postResult = await axios.get(
+          "https://app.theincuba8or.com/api/posts"
+        );
+        setPostData(postResult.data.data);
+        console.log(postResult.data.data);
+      } catch (error) {
+        setError(error);
+      }
+    };
+    fetchPostData();
+  }, []);
+
+  if (error) {
+    return <div>Error fetching data: {error.message}</div>;
+  }
+
   return (
     <div>
       <h1 class="text-[#000000] font-bold text-4xl font-['Jost']">
         RECENT ARTICLES
       </h1>
-      <div>
-        <div class="my-9  grid grid-cols-3">
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Djtunez.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
+      <div class="grid grid-cols-3">
+        {articleData.map((item, index) => (
+          <div key={index} class="my-9">
+            <div class="px-2 sm:px-0">
+              <div class="sm:w-[240px] h-[168px] bg-cover relative">
+                <img src={item.featured_image} alt="APIimage" class="h-full" />
+                <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
+                  {item.author}
+                </button>
+              </div>
+              <h4 class="my-[8px] font-['Jost'] font-bold text-base">
+                {item.title}
+              </h4>
+              <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
+                {item.published_at}
+              </p>
             </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              DJ Tunez and Amexin live the <br /> fast life on “Lambo”
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
           </div>
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Tiblaze.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              T. I. Blaze “El Major” Album <br /> Review
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Afrobeat.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              Afro-Highlife prodigy Spl <br /> Daddy makes his case with <br />
-              “Trumpet”
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-        </div>
-        <div class="my-9  grid grid-cols-3">
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Afrobeat.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              Afro-Highlife prodigy Spl <br /> Daddy makes his case with <br />
-              “Trumpet”
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Djtunez.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              DJ Tunez and Amexin live the <br /> fast life on “Lambo”
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Tiblaze.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              T. I. Blaze “El Major” Album <br /> Review
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-        </div>
-        <div class="my-9  grid grid-cols-3">
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Tiblaze.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              T. I. Blaze “El Major” Album <br /> Review
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Afrobeat.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              Afro-Highlife prodigy Spl <br /> Daddy makes his case with <br />
-              “Trumpet”
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-          <div class="px-2 sm:px-0">
-            <div class="sm:w-[240px] h-[168px] bg-[url('././assets/Images/Djtunez.png')] bg-cover relative">
-              <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
-                MUSIC & PLAYLISTS
-              </button>
-            </div>
-            <h4 class="my-[8px] font-['Jost'] font-bold text-base">
-              DJ Tunez and Amexin live the <br /> fast life on “Lambo”
-            </h4>
-            <p class="text-[#808080] font-['Work_Sans'] font-normal text-xs">
-              January 11, 2023
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
       <div class="sm:pr-40">
-        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
-          <img src={breakfast} alt="breakfast" />
-          <div>
-            <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
-              ‘Na everybody, go chop breakfast’— Patrick Dante Oke’s ‘Breakfast’
-              Play review
-            </h1>
-            <span class="text[#808080] font-['Work_Sans'] text-xs font-normal mr-1">
-              by
-            </span>
-            <span class="text-[#111111] font-['Work_Sans'] text-xs font-normal mr-3">
-              Hafeedoh Balogun
-            </span>
-            <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
-              January 8, 2023
-            </span>
-            <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
-              “Because that's what unfaithfulness is, isn't it? A cancer that's
-              always in the back of your mind...
-            </p>
+        {postData.map((item, index) => (
+          <div
+            key={index}
+            class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8"
+          >
+            <div class="h-[250px]">
+              <img src={item.featured_image} alt="APIimage" class="h-full" />
+            </div>
+            <div>
+              <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
+                {item.title}
+              </h1>
+              <span class="text[#808080] font-['Work_Sans'] text-xs font-normal mr-1">
+                by
+              </span>
+              <span class="text-[#111111] font-['Work_Sans'] text-xs font-normal mr-3">
+                {item.author}
+              </span>
+              <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
+                {item.published_at}
+              </span>
+              <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
+                {item.content}
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
-          <img src={farfromhome} alt="farfromhome" />
-          <div>
-            <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl">
-              “Far From Home” the new Netflix show is lovable but unrealistic: A
-              review
-            </h1>
-            <span class="text[#808080] font-['Work_Sans'] text-xs font-normal mr-1">
-              by
-            </span>
-            <span class="text-[#111111] font-['Work_Sans'] text-xs font-normal mr-3">
-              Hafeedoh Balogun
-            </span>
-            <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
-              January 8, 2023
-            </span>
-            <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
-              “Because that's what unfaithfulness is, isn't it? A cancer that's
-              always in the back of your mind...
-            </p>
-          </div>
-        </div>
-        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
-          <img src={farfromhome} alt="farfromhome" />
-          <div>
-            <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
-              “Far From Home” the new Netflix show is lovable but unrealistic: A
-              review
-            </h1>
-            <span class="text[#808080] font-['Work_Sans'] text-xs font-normal mr-1">
-              by
-            </span>
-            <span class="text-[#111111] font-['Work_Sans'] text-xs font-normal mr-3">
-              Hafeedoh Balogun
-            </span>
-            <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
-              January 8, 2023
-            </span>
-            <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
-              “Because that's what unfaithfulness is, isn't it? A cancer that's
-              always in the back of your mind...
-            </p>
-          </div>
-        </div>
-        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
-          <img src={farfromhome} alt="farfromhome" />
-          <div>
-            <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
-              “Far From Home” the new Netflix show is lovable but unrealistic: A
-              review
-            </h1>
-            <span class="text[#808080] font-['Work_Sans'] text-xs font-normal mr-1">
-              by
-            </span>
-            <span class="text-[#111111] font-['Work_Sans'] text-xs font-normal mr-3">
-              Hafeedoh Balogun
-            </span>
-            <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
-              January 8, 2023
-            </span>
-            <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
-              “Because that's what unfaithfulness is, isn't it? A cancer that's
-              always in the back of your mind...
-            </p>
-          </div>
-        </div>
-        <div class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8">
-          <img src={farfromhome} alt="farfromhome" />
-          <div>
-            <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
-              “Far From Home” the new Netflix show is lovable but unrealistic: A
-              review
-            </h1>
-            <span class="text[#808080] font-['Work_Sans'] text-xs font-normal mr-1">
-              by
-            </span>
-            <span class="text-[#111111] font-['Work_Sans'] text-xs font-normal mr-3">
-              Hafeedoh Balogun
-            </span>
-            <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
-              January 8, 2023
-            </span>
-            <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
-              “Because that's what unfaithfulness is, isn't it? A cancer that's
-              always in the back of your mind...
-            </p>
-          </div>
-        </div>
+        ))}
+
         <div class="flex justify-center items-center">
           <button class="border-solid border-[1px] border-[#E0E0E0] px-16 py-2 rounded-sm text-[#212121] font-normal text-xs font-['Work_Sans']">
             LOAD MORE

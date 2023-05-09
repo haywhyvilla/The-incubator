@@ -51,7 +51,7 @@ const Articles = () => {
         {articleData.map((item, index) => (
           <div key={index} class="my-9">
             <div class="px-2 sm:px-0">
-              <div class="sm:w-[240px] h-[168px] bg-cover relative">
+              <div class="sm:w-[240px] h-[168px] relative">
                 <img src={item.featured_image} alt="APIimage" class="h-full" />
                 <button class="bg-[#111111] absolute bottom-[13px] left-[10px] text-white font-['Work_Sans'] font-normal text-xs px-[6px] py-[3px]">
                   {item.author}
@@ -67,14 +67,18 @@ const Articles = () => {
           </div>
         ))}
       </div>
-      <div class="sm:pr-40">
+      <div class="sm:pr-2">
         {postData.map((item, index) => (
           <div
             key={index}
             class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8"
           >
-            <div class="h-[250px]">
-              <img src={item.featured_image} alt="APIimage" class="h-full" />
+            <div class="h-[250px] w-[250px]">
+              <img
+                src={item.featured_image}
+                alt="APIimage"
+                class="h-full w-full"
+              />
             </div>
             <div>
               <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
@@ -89,8 +93,8 @@ const Articles = () => {
               <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
                 {item.published_at}
               </span>
-              <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4">
-                {item.content}
+              <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4 w-[75%]">
+                {item.content.substring(0, 150)}
               </p>
             </div>
           </div>

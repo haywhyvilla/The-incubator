@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import breakfast from "../assets/Images/breakfast.png";
-import farfromhome from "../assets/Images/farfromhome.png";
-
 const Articles = () => {
   const [articleData, setArticleData] = useState([]);
   const [postData, setPostData] = useState([]);
@@ -42,6 +39,18 @@ const Articles = () => {
     return <div>Error fetching data: {error.message}</div>;
   }
 
+  // function removeHtmlTags(paragraph) {
+  //   let regex = /<[^>]+>/g;
+  //   let cleanedParagraph = paragraph.replace(regex, "");
+  //   return cleanedParagraph;
+  // }
+
+  function removeHtmlTags(str) {
+    if (str === null || str === "") return false;
+    else str = str.toString();
+    return str.replace(/(<([^>]+)>)/gi, "");
+  }
+
   return (
     <div>
       <h1 class="text-[#000000] font-bold text-4xl font-['Jost']">
@@ -69,10 +78,7 @@ const Articles = () => {
       </div>
       <div class="sm:pr-2">
         {postData.map((item, index) => (
-          <div
-            key={index}
-            class="sm:flex justify-center gap-6 ml-6 sm:ml-0 my-8"
-          >
+          <div key={index} class="sm:flex gap-6 ml-6 sm:ml-0 my-8">
             <div class="h-[250px] w-[250px]">
               <img
                 src={item.featured_image}
@@ -94,7 +100,7 @@ const Articles = () => {
                 {item.published_at}
               </span>
               <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4 w-[75%]">
-                {item.content.substring(0, 150)}
+                {removeHtmlTags(item.content.substring(3, 150))}
               </p>
             </div>
           </div>

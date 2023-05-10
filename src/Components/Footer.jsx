@@ -1,10 +1,15 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import {
+  AiOutlineTwitter,
+  AiOutlineInstagram,
+  AiOutlineMail,
+} from "react-icons/ai";
 
 const Footer = () => {
   return (
     <div class="bg-[#0B0B0B] text-white w-full mx-auto md:px-16">
-      <div class="container mx-auto md:px-[150px] px-5 py-24 flex md:justify-between items-start flex-wrap gap-5">
+      <div class="container mx-auto md:px-[150px] px-5 py-24">
         <div class="flex justify-center items-center">
           <h4 class="font-['Courier_Prime'] text-white mr-4 font-bold text-2xl">
             the
@@ -13,53 +18,37 @@ const Footer = () => {
             incubator
           </h4>
         </div>
-        <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Homepage
-          </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+        <div class="flex justify-center items-center gap-3 sm:gap-[30px] mt-6">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
             Stories
           </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Special Projects
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
+            Projects
           </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
             Gatherings
           </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
             Trips
           </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
             Shop
           </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
             Playlists
           </a>
         </div>
-        <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Music
-          </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Communities
-          </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Best new music
-          </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            Featured
-          </a>
-          <a class="uppercase text-white font-light text-base font-['Work_Sans']">
-            The Shuffle
-          </a>
-        </div>
-        <div class="flex flex-col gap-[30px] sm:w-[15%] mt-6 md:mt-0">
+
+        <div class="flex justify-center items-center flex-col gap-[30px] mt-6 md:mt-0">
           <a class="text-white font-light text-base font-['Work_Sans']">
-            contact@theincubator.com
+            © 2023 The Incubator. All Rights Reserved.
           </a>
           <h3 class="font-bold text-2xl font-['Jost'] mt-6">Subscribe</h3>
-          <p class="font-['Work_Sans'] font-light text-base">
-            Weekly updates on music, style, culture and much more.
+          <p class="font-['Work_Sans'] font-light text-base xl:px-60 text-center">
+            Use of this site constitutes the acceptance of our user agreement
+            and privacy policy. The materials on this site may not be
+            reproduced, distributed, transmitted, cached or otherwise used,
+            except with prior written permission of The Incubator.
           </p>
           <div class="hidden sm:flex justify-start items-center">
             <input class="h-[58.95px] bg-[#1E1E1E] outline-none" />
@@ -67,6 +56,27 @@ const Footer = () => {
               Submit
               <BsArrowRight />
             </button>
+          </div>
+
+          <div class="flex justify-between items-center gap-8">
+            <a
+              class="bg-[rgba(32,33,36,0.5)] p-3 rounded-full"
+              href="https://twitter.com/theincubatorhq"
+            >
+              <AiOutlineTwitter size={30} />
+            </a>
+            <a
+              class="bg-[rgba(32,33,36,0.5)] p-3 rounded-full"
+              href="https://www.instagram.com/theincubatorhq/"
+            >
+              <AiOutlineInstagram size={30} />
+            </a>
+            <a
+              class="bg-[rgba(32,33,36,0.5)] p-3 rounded-full"
+              href="mailto:weare@theincuba8or.com"
+            >
+              <AiOutlineMail size={30} />
+            </a>
           </div>
         </div>
       </div>

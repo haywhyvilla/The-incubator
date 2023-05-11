@@ -43,7 +43,7 @@ const Footer = () => {
           <a class="text-white font-light text-base font-['Work_Sans']">
             © 2023 The Incubator. All Rights Reserved.
           </a>
-          <h3 class="font-bold text-2xl font-['Jost'] mt-6">Subscribe</h3>
+          <h3 class="font-bold text-2xl font-['Jost'] mt-2">Subscribe</h3>
 
           <div class="flex justify-start items-center">
             <input class="h-8 sm:h-[58.95px] bg-[#1E1E1E] outline-none" />

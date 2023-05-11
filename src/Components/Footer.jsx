@@ -19,25 +19,25 @@ const Footer = () => {
           </h4>
         </div>
         <div class="flex justify-center items-center gap-3 sm:gap-[30px] mt-6">
-          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
             Stories
           </a>
-          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
             Projects
           </a>
-          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
             Gatherings
           </a>
-          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
             Trips
           </a>
-          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
+          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
             Shop
           </a>
-          <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans']">
-            Playlists
-          </a>
         </div>
+        <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] flex justify-center items-baseline mt-2">
+          Playlists
+        </a>
 
         <div class="flex justify-center items-center flex-col gap-[30px] mt-6 md:mt-0">
           <a class="text-white font-light text-base font-['Work_Sans']">

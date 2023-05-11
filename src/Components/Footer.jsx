@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <div class="bg-[#0B0B0B] text-white w-full mx-auto md:px-16">
-      <div class="container mx-auto md:px-[150px] px-5 py-12">
+      <div class="container mx-auto md:px-[150px] px-5 py-8 sm:py-12">
         <div class="flex justify-center items-center">
           <h4 class="font-['Courier_Prime'] text-white mr-4 font-bold text-2xl">
             the

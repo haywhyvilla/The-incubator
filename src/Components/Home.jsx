@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   return (
-    <div class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] lg:bg-[url('././assets/Images/Hero-img.png')] bg-cover px-4 md:px-[140px] py-[35px] relative">
+    <div class="h-screen w-screen bg-[url('././assets/Images/mobilehero.png')] lg:bg-[url('././assets/Images/Hero-img.png')] bg-cover md:px-[140px] py-[35px] relative">
       <div
         class="flex justify-between items-center mb-0 sm:mb-[250px] px-4"
         onClick={heroClick}

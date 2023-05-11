@@ -17,9 +17,6 @@ const SideNavMobileVeiw = () => {
       >
         <div>
           <ul class="my-10">
-            <li class="text-[#F5F5F5] font-medium text-base mb-9 font-['Jost']">
-              Homepage
-            </li>
             <li
               class="text-[#F5F5F5] font-medium text-base mb-9 font-['Jost'] flex"
               onClick={handleExpandClick}

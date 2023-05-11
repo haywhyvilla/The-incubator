@@ -59,7 +59,7 @@ const Articles = () => {
   return (
     <div>
       <h1 class="text-[#000000] font-bold text-4xl font-['Jost']">
-        RECENT ARTICLES
+        RECENT STORIES
       </h1>
       <div class="grid grid-cols-3">
         {articleData.map((item, index) => (

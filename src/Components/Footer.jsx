@@ -44,19 +44,20 @@ const Footer = () => {
             © 2023 The Incubator. All Rights Reserved.
           </a>
           <h3 class="font-bold text-2xl font-['Jost'] mt-6">Subscribe</h3>
-          <p class="font-['Work_Sans'] font-light text-base xl:px-60 text-center">
-            Use of this site constitutes the acceptance of our user agreement
-            and privacy policy. The materials on this site may not be
-            reproduced, distributed, transmitted, cached or otherwise used,
-            except with prior written permission of The Incubator.
-          </p>
-          <div class="hidden sm:flex justify-start items-center">
+
+          <div class="flex justify-start items-center">
             <input class="h-[58.95px] bg-[#1E1E1E] outline-none" />
             <button class="flex justify-center items-center h-[58.95px] bg-[#1E1E1E] px-3 outline-0">
               Submit
               <BsArrowRight />
             </button>
           </div>
+          <p class="font-['Work_Sans'] font-light text-base xl:px-60 text-center">
+            Use of this site constitutes the acceptance of our user agreement
+            and privacy policy. The materials on this site may not be
+            reproduced, distributed, transmitted, cached or otherwise used,
+            except with prior written permission of The Incubator.
+          </p>
 
           <div class="flex justify-between items-center gap-8">
             <a

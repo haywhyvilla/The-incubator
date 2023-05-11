@@ -52,7 +52,7 @@ const Footer = () => {
               <BsArrowRight />
             </button>
           </div>
-          <p class="font-['Work_Sans'] font-light text-base xl:px-60 text-center">
+          <p class="font-['Work_Sans'] font-light text-xs xl:px-60 text-center">
             Use of this site constitutes the acceptance of our user agreement
             and privacy policy. The materials on this site may not be
             reproduced, distributed, transmitted, cached or otherwise used,
@@ -61,22 +61,22 @@ const Footer = () => {
 
           <div class="flex justify-between items-center gap-8">
             <a
-              class="bg-[rgba(32,33,36,0.5)] p-3 rounded-full"
+              class="bg-[rgba(32,33,36,0.5)] p-2 rounded-full"
               href="https://twitter.com/theincubatorhq"
             >
-              <AiOutlineTwitter size={30} />
+              <AiOutlineTwitter size={28} />
             </a>
             <a
-              class="bg-[rgba(32,33,36,0.5)] p-3 rounded-full"
+              class="bg-[rgba(32,33,36,0.5)] p-2 rounded-full"
               href="https://www.instagram.com/theincubatorhq/"
             >
-              <AiOutlineInstagram size={30} />
+              <AiOutlineInstagram size={28} />
             </a>
             <a
-              class="bg-[rgba(32,33,36,0.5)] p-3 rounded-full"
+              class="bg-[rgba(32,33,36,0.5)] p-2 rounded-full"
               href="mailto:weare@theincuba8or.com"
             >
-              <AiOutlineMail size={30} />
+              <AiOutlineMail size={28} />
             </a>
           </div>
         </div>

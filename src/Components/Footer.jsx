@@ -34,16 +34,19 @@ const Footer = () => {
           <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
             Shop
           </a>
+          <a class="hidden sm:block uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] border-r-2 border-solid border-white px-2">
+            Playlists
+          </a>
         </div>
-        <a class="uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] flex justify-center items-baseline mt-2">
+        <a class="sm:hidden uppercase text-white font-light text-xs sm:text-base font-['Work_Sans'] flex justify-center items-center mt-2">
           Playlists
         </a>
 
-        <div class="flex justify-center items-center flex-col gap-[30px] mt-6 md:mt-0">
+        <div class="flex justify-center items-center flex-col gap-[30px] mt-4 md:mt-2">
           <a class="text-white font-light text-base font-['Work_Sans']">
             © 2023 The Incubator. All Rights Reserved.
           </a>
-          <h3 class="font-bold text-2xl font-['Jost'] mt-2">Subscribe</h3>
+          <h3 class="font-bold text-lg sm:text-2xl font-['Jost']">Subscribe</h3>
 
           <div class="flex justify-start items-center">
             <input class="h-8 sm:h-[58.95px] bg-[#1E1E1E] outline-none" />

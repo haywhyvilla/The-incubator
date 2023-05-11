@@ -8,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const News = () => {
   return (
-    <div class="w-screen">
+    <div class="w-screen hidden">
       <div class="hidden sm:grid grid-cols-3 gap-10 sm:px-[150px] sm:py-9">
         <div class="flex justify-center items-center gap-4">
           <img src={img1} alt="img1" />

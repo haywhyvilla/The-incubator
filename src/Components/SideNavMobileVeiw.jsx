@@ -15,6 +15,14 @@ const SideNavMobileVeiw = () => {
         class="mt-8 w-[275px] h-[65%] py-2 px-9 absolute bg-[rgba(32,33,36,0.5)]"
         id="bg"
       >
+        <div class="flex justify-start items-center">
+          <h4 class="font-['Courier_Prime'] text-white mr-2 font-bold text-lg">
+            the
+          </h4>
+          <h4 class="font-['Courier_Prime'] text-[#202124] font-bold text-lg">
+            incubator
+          </h4>
+        </div>
         <div>
           <ul class="my-10">
             <li

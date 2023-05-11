@@ -130,29 +130,29 @@ const Home = () => {
         </div>
       )}
 
-      <div class="h-[50px] w-[100%] bg-[rgba(32,33,36,0.5)] mt-[20px] justify-between items-center px-[104px] hidden md:flex">
+      <div class="h-[50px] w-[100%] bg-[rgba(32,33,36,0.5)] mt-[50px] justify-between items-center px-[104px] hidden md:flex">
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
-          News & Developments
+          Stories
         </a>
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
-          Pop Culture
+          Special Projects
         </a>
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
-          Music & Playlists
+          Gatherings
         </a>
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
-          Technology
+          Trips
         </a>
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
-          Fashion
+          Shop
         </a>
         <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
-          Sex
+          Playlists & Music
         </a>
-        <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
+        <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base hidden xl:block">
           Business & Entrepreneurship
         </a>
-        <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base">
+        <a class="text-[#F5F5F5] font-['Work_Sans'] font-semibold text-base hidden xl:block">
           Visuals +
         </a>
       </div>

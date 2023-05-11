@@ -46,8 +46,8 @@ const Footer = () => {
           <h3 class="font-bold text-2xl font-['Jost'] mt-6">Subscribe</h3>
 
           <div class="flex justify-start items-center">
-            <input class="h-[58.95px] bg-[#1E1E1E] outline-none" />
-            <button class="flex justify-center items-center h-[58.95px] bg-[#1E1E1E] px-3 outline-0">
+            <input class="h-8 sm:h-[58.95px] bg-[#1E1E1E] outline-none" />
+            <button class="flex justify-center items-center h-8 sm:h-[58.95px] bg-[#1E1E1E] px-3 outline-0">
               Submit
               <BsArrowRight />
             </button>
@@ -64,19 +64,19 @@ const Footer = () => {
               class="bg-[rgba(32,33,36,0.5)] p-2 rounded-full"
               href="https://twitter.com/theincubatorhq"
             >
-              <AiOutlineTwitter size={28} />
+              <AiOutlineTwitter size={20} />
             </a>
             <a
               class="bg-[rgba(32,33,36,0.5)] p-2 rounded-full"
               href="https://www.instagram.com/theincubatorhq/"
             >
-              <AiOutlineInstagram size={28} />
+              <AiOutlineInstagram size={20} />
             </a>
             <a
               class="bg-[rgba(32,33,36,0.5)] p-2 rounded-full"
               href="mailto:weare@theincuba8or.com"
             >
-              <AiOutlineMail size={28} />
+              <AiOutlineMail size={20} />
             </a>
           </div>
         </div>

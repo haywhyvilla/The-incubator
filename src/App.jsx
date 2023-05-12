@@ -1,24 +1,39 @@
 import "./App.css";
-import Home from "./Components/Home";
-import Articles from "./Components/Articles";
-import Aside from "./Components/Aside";
-import News from "./Components/News";
-import Details from "./Components/Details";
-import Footer from "./Components/Footer";
+import Homepage from "./Homepage/Homepage";
+import Postpage from "./Stories/Postpage";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  Link,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Root />}>
+        <Route index element={<Homepage />} />
+        <Route path="/postpage" element={<Postpage />} />
+      </Route>
+    )
+  );
   return (
-    <div class="overflow-hidden">
-      <Home />
-      <News />
-      <div class="md:px-[140px] sm:py-[60px] sm:grid grid-cols-[2fr_1fr]">
-        <Articles />
-        <Aside />
-      </div>
-      <Details />
-      <Footer />
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 }
+
+const Root = () => {
+  return (
+    <>
+      <div>
+        <Outlet />
+      </div>
+    </>
+  );
+};
 
 export default App;

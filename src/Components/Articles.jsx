@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Articles = () => {
   const [articleData, setArticleData] = useState([]);
   const [postData, setPostData] = useState([]);
   const [error, setError] = useState(null);
-  const [showMorePostData, setShowMorePostData] = useState(3);
-
-  const loadMore = () => {
-    setShowMorePostData((prev) => prev + 1);
-  };
 
   useEffect(() => {
     const fetchArticleData = async () => {
@@ -82,7 +78,7 @@ const Articles = () => {
         ))}
       </div>
       <div class="sm:pr-2">
-        {postData.slice(0, showMorePostData).map((item, index) => (
+        {postData.slice(0, 3).map((item, index) => (
           <div key={index} class="sm:flex gap-6 ml-6 sm:ml-0 my-8">
             <div class="h-[250px] w-[250px]">
               <img src={item.featured_image} alt="APIimage" class="h-full" />
@@ -108,14 +104,11 @@ const Articles = () => {
         ))}
 
         <div class="flex justify-center items-center">
-          {showMorePostData >= postData.length ? null : (
-            <button
-              class="border-solid border-[1px] border-[#E0E0E0] px-16 py-2 rounded-sm text-[#212121] font-normal text-xs font-['Work_Sans'] cursor-pointer hover:text-white hover:bg-black"
-              onClick={loadMore}
-            >
+          <Link to="/postpage">
+            <button class="border-solid border-[1px] border-[#E0E0E0] px-16 py-2 rounded-sm text-[#212121] font-normal text-xs font-['Work_Sans'] cursor-pointer hover:text-white hover:bg-black">
               LOAD MORE
             </button>
-          )}
+          </Link>
         </div>
       </div>
     </div>

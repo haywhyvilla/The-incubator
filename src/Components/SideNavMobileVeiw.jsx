@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 
@@ -38,9 +39,11 @@ const SideNavMobileVeiw = () => {
             </li>
             <div class={expandStories ? "mt-[-20px]" : "hidden"}>
               <ul class="ml-4">
-                <li class="text-[#F5F5F5] font-medium text-xs mb-2 font-['Jost']">
-                  Community Stories
-                </li>
+                <Link to="/postpage">
+                  <li class="text-[#F5F5F5] font-medium text-xs mb-2 font-['Jost']">
+                    Community Stories
+                  </li>
+                </Link>
                 <li class="text-[#F5F5F5] font-medium text-xs mb-2 font-['Jost']">
                   Individual Stories
                 </li>

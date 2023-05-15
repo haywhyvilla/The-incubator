@@ -28,7 +28,6 @@ const Articles = () => {
           "https://app.theincuba8or.com/api/posts"
         );
         setPostData(postResult.data.data);
-        console.log(postResult.data.data);
       } catch (error) {
         setError(error);
       }

@@ -26,7 +26,7 @@ const Home = () => {
     const fetchHeroData = async () => {
       try {
         const result = await axios.get(
-          "https://app.theincuba8or.com/api/recent-articles"
+          "https://app.theincuba8or.com/api/hero-featured-posts"
         );
         setHeroData(result.data.data);
         console.log(result.data.data);

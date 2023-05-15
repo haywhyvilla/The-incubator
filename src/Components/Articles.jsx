@@ -95,9 +95,11 @@ const Articles = () => {
               <span class="text-[#808080] font-['Work_Sans'] text-xs font-normal uppercase">
                 {item.published_at}
               </span>
-              <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4 w-[75%]">
+
+              <div dangerouslySetInnerHTML={{ __html: item?.content }}></div>
+              {/* <p class="text-[#333333] font-['Work_Sans'] text-base font-normal mt-4 w-[75%]">
                 {removeHtmlTags(item.content.substring(0, 150))}
-              </p>
+              </p> */}
             </div>
           </div>
         ))}

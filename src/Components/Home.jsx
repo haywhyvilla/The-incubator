@@ -18,7 +18,7 @@ const Home = () => {
       } else {
         setCurrentState(currentState + 1);
       }
-    }, 2000);
+    }, 5000);
     return () => clearTimeout(timer);
   }, [currentState]);
 
@@ -78,7 +78,7 @@ const Home = () => {
   return (
     <div>
       <div
-        class="h-screen w-screen bg-cover md:px-[140px] py-[35px] relative"
+        class="h-screen w-screen bg-cover bg-no-repeat md:px-[140px] py-[35px] relative"
         style={bgImageStyle}
       >
         <div
@@ -131,11 +131,18 @@ const Home = () => {
               <h1 class="font-['Jost'] text-[#F5F5F5] font-medium sm:font-bold text-3xl sm:text-5xl my-4">
                 {heroData[currentState]?.title.substring(0, 15)}
               </h1>
-              <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3 hidden sm:hidden">
+              {/* <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3 hidden sm:hidden">
                 {removeHtmlTags(
                   heroData[currentState]?.content.substring(0, 150)
                 )}
                 ...
+              </p> */}
+              <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3 hidden sm:hidden">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: heroData[currentState]?.content.substring(0, 450),
+                  }}
+                ></div>
               </p>
               <span class="text-[#F5F5F5] font-['Work_Sans'] font-normal text-[14px] mr-2">
                 by
@@ -171,8 +178,15 @@ const Home = () => {
               <h1 class="font-['Jost'] text-[#F5F5F5] font-medium sm:font-bold text-3xl sm:text-5xl my-4">
                 {heroData[currentState]?.title.substring(0, 15)}...
               </h1>
-              <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3">
+              {/* <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3">
                 {heroData[currentState]?.content.substring(0, 150)}...
+              </p> */}
+              <p class="font-['Work_Sans'] text-[#F5F5F5] font-normal text-base my-3">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: heroData[currentState]?.content.substring(0, 450),
+                  }}
+                ></div>
               </p>
               <span class="text-[#F5F5F5] font-['Work_Sans'] font-normal text-[14px] mr-2">
                 by

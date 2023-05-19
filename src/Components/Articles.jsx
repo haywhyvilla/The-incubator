@@ -45,11 +45,11 @@ const Articles = () => {
   //   return cleanedParagraph;
   // }
 
-  function removeHtmlTags(str) {
-    if (str === null || str === "") return false;
-    else str = str.toString();
-    return str.replace(/(<([^>]+)>)/gi, "");
-  }
+  // function removeHtmlTags(str) {
+  //   if (str === null || str === "") return false;
+  //   else str = str.toString();
+  //   return str.replace(/(<([^>]+)>)/gi, "");
+  // }
 
   return (
     <div>
@@ -79,9 +79,9 @@ const Articles = () => {
       <div class="sm:pr-2">
         {postData.slice(0, 3).map((item, index) => (
           <div key={index} class="sm:flex gap-6 ml-6 sm:ml-0 my-8">
-            <div class="h-[250px] w-[250px]">
+            {/* <div class="h-[250px] w-[250px]">
               <img src={item.featured_image} alt="APIimage" class="h-full" />
-            </div>
+            </div> */}
             <div>
               <h1 class="text-[#111111] font-['Jost'] font-bold text-2xl mb-2">
                 {item.title}
